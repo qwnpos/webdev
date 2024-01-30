@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset_="utf-8">
+        <title> hemsidan om mig </title>
+    </head> 
+    <body> 
+        <h1> här är rubriken</h1>
+        <p> detta är brödtextens första stycke (som är enklare att kalla paragraf)</p>
+        <p> och detta är det (den) andra.</p>
+        <a href="https://github.com/qwnpos" target= "_blank">min github</a>
+       <!-- <a href="http://github.com/qwnpos" title= "_blank">min github</a> re: vad title gör?? va?-->
+       <p> Nedan är är en bild på min Fjodor i sina nya skor. I bakgrunden syns även <a href="https://sv.wikipedia.org/wiki/%C3%84nder" target= "_blank">änder.</a> </p>
+       <img src="IMG_20240120_155105.jpg" width="104" height="142">
+       <p>5 spännande fakta om Fjodor:</p>
+       <ul>
+        <li> 1 Han är en <a href="https://www.skk.se/sv/hundraser/?group=8" target= "_blank">apporterande jakthund</a></li>
+        <li> 2 Hans namn är ryskt, men är stavat på svenska.</li>
+        <li> 3 Fjodors hundras har sitt ursprung på Kuba.</li>
+        <li> 4 Han har fyra tassar. </li>
+        <li> 5 Han är fantastisk på att spåra. </li>
+       </ul>
+       <p> Tro inte på allt du läser på internet. Bland dessa "fakta" finns ett fel. Vilket tror du? Välj rätt så får du kanske gå vidare! (Tips: använd länkarna och information från bilden.)</p>
+    <!---något som gör att man får komma vidare genom att skriva rätt? funkar det eller är jag i fel element--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fjodors fiktiva faktum</title>
+  
+    <form id="quizForm">
+      <label>
+        Förmodat fabricerat faktum:
+        <select name="Fjodorsfinurligaform">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+      <input type="button" value="Submit" onclick="checkAnswers()">
+    </form>
+  
+    <script>
+      function checkAnswers() {
+        // Get selected values
+        var answer1 = document.forms["quizForm"]["Fjodorsfinurligaform"].value;
+  
+        // Define correct answers
+        var correctAnswer1 = "1";
+    
+        // Check if question is answered correctly
+        if (answer1 === correctAnswer1) {
+          // Redirect to the next page som är presentationen om mig
+          window.location.href = "presentation.html";
+        }
+        else {
+          alert("Wrong answer. Please try again, though!");
+        }
+      }
+    </script>
+    </body>
+</html>
