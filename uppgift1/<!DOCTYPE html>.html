@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link rel="stylesheet" type="text/css" href="stilmall4prez.css" />
         <meta charset_="utf-8">
         <title> hemsidan om mig </title>
     </head> 
     <body> 
         <h1> här är rubriken</h1>
-        <p> detta är brödtextens första stycke (som är enklare att kalla paragraf)</p>
-        <p> och detta är det (den) andra.</p>
+        <p> detta är brödtextens första stycke</p>
         <a href="https://github.com/qwnpos" target= "_blank">min github</a>
-       <!-- <a href="http://github.com/qwnpos" title= "_blank">min github</a> re: vad title gör?? va?-->
+       <!-- <a href="http://github.com/qwnpos" title= "_blank">mina github</a> re: vad title gör?? va?-->
        <p> Nedan är är en bild på min Fjodor i sina nya skor. I bakgrunden syns även <a href="https://sv.wikipedia.org/wiki/%C3%84nder" target= "_blank">änder.</a> </p>
        <img src="IMG_20240120_155105.jpg" width="104" height="142">
-       <p>5 spännande fakta om Fjodor:</p>
+       
+       <div class="my-box">
+       <p>5 <i>spännande</i> fakta om Fjodor:</p>
        <ul>
         <li> 1 Han är en <a href="https://www.skk.se/sv/hundraser/?group=8" target= "_blank">apporterande jakthund</a></li>
-        <li> 2 Hans namn är ryskt, men är stavat på svenska.</li>
-        <li> 3 Fjodors hundras har sitt ursprung på Kuba.</li>
-        <li> 4 Han har fyra tassar. </li>
-        <li> 5 Han är fantastisk på att spåra. </li>
+        <li> 2 Hans namn är <a href="https://sv.wikipedia.org/wiki/Ryska" target= "_blank">ryskt</a>, men är stavat på <a href="https://sv.wikipedia.org/wiki/Svensk_ortografi#%C3%96verensst%C3%A4mmelse_mellan_skrift_och_tal" target= "_blank">svenska</a>. </li>
+        <li> 3 Fjodors hundras har sitt ursprung på <a href="https://is.gd/ldzLgg" target= "_blank">Kuba</a>.</li>
+        <li> 4 Han har fyra <a href="https://en.wikipedia.org/wiki/TASS" target="_blank"> tassar</a>.</li>
+        <li> 5 Han är fantastisk på att <a href="https://www.postnord.se/vara-verktyg/spara-brev-paket-och-pall" target= "_blank">spåra</a>. </li>
        </ul>
-       <p> Tro inte på allt du läser på internet. Bland dessa "fakta" finns ett fel. Vilket tror du? Välj rätt så får du kanske gå vidare! (Tips: använd länkarna och information från bilden.)</p>
-    <!---något som gör att man får komma vidare genom att skriva rätt? funkar det eller är jag i fel element--> 
+      </div> 
+      <div class="plottwist"> <p> Tro inte på allt du läser på internet. Bland dessa "fakta" finns ett fel. Vilket tror du är fabricerat? Välj rätt så får du kanske gå vidare! (Tips: använd länkarna och information från bilden.)</p>
+         
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fjodors fiktiva faktum</title>
+    <title>finn fjodors fiktiva faktum</title>
   
     <form id="quizForm">
       <label>
@@ -36,26 +39,29 @@
           <option value="5">5</option>
         </select>
       </label>
-      <input type="button" value="Submit" onclick="checkAnswers()">
+      <input type="button" value="Gå vidare" onclick="checkAnswers()">
     </form>
+  </div>
   
-    <script>
-      function checkAnswers() {
-        // Get selected values
-        var answer1 = document.forms["quizForm"]["Fjodorsfinurligaform"].value;
-  
-        // Define correct answers
-        var correctAnswer1 = "1";
-    
-        // Check if question is answered correctly
-        if (answer1 === correctAnswer1) {
-          // Redirect to the next page som är presentationen om mig
+  <script>
+      // kontrollera svar
+      function checkAnswers()
+      {
+
+        var answer = document.forms["quizForm"]["Fjodorsfinurligaform"].value;
+
+        // konrollera om valt svar är rätt
+        if (answer === "1") {
+          // omdirigerar till presenationssida
           window.location.href = "presentation.html";
         }
         else {
-          alert("Wrong answer. Please try again, though!");
+          //vid fel svar visas felmeddelande
+          alert("Fel fel funnet. Fortsätt försöka!");
+       
         }
       }
     </script>
+
     </body>
 </html>

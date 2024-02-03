@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">    
+      <link rel="stylesheet" type="text/css" href="stilmall4prez.css" />
+    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title> hemsidan om mig </title>
+    </head> 
+    <body>
+        
+    <div class="flex-container">
+
+        <div class="main-content">
+            <h1>Om mig</h1>
+            <div class="om-mig">
+                <p>
+                    <p id="section1">Jag heter Frida Frehner och bor i Majorna. Trots att jag är föddes redan 1996 är det först nu jag ger mig på att komplettera mina gymnasiestudier, och det är så jag hamnade på den här kursen!</p>
+
+                    <p id="section2">Jag har ett väldigt stort hundintresse, men en ganska liten hund. Han heter Fjodor. (Det är samma Fjodor för som bistått med faktarutan på förstasidan.) Jag är faktiskt… diplomerad hundmassör, men det också den enda dokumenterade utbildningen jag har… tror jag. Fast jag har aldrig jobbat som hundmassör. Jag har inte jobbat på länge överhuvudtaget tyvärr, eftersom jag varit sjukskriven i ca två evigheter.</p>
+                    
+                    <p id="section3">Målet med mina [komvux]studier i stort är att fixa högskolebehörighet, så att jag kan plugga vidare med sådant som känns kul eller spännande. Till en början har jag dock tänkt prioritera att utbilda mig till medicinsk sekreterare, så att jag har en chans att komma ut i arbetslivet igen innan jag dör förhoppningsvis.</p>
+                    
+                    <p id="commonSection1">Målet med webbutvecklingskursen är utöver att komma 100 kurspoäng närmre gymnasieexamen att få lite grundläggande förståelse för programmering i stort genom att lära mig lite html och javascript (...och css), vilket jag tänker kan vara en bra grund i sig, men även bra introduktion till programmering, för att senare kunna gå vidare till andra språk.</p>
+                    
+                    <p id="section5">
+                      <span id="part1">Jag siktar på ett godkänt betyg (E) i kursen,</span> och 
+                      <span id="part2">har sedan tänkt läsa webbutveckling 2 för att ytterligare kunna bygga på det jag lär mig nu. Det hade varit väldigt roligt att lära mig tillräckligt för att kunna skapa något användbart framöver, men i nuläget har jag för lite kunskap för såpass specifika idéer.</span>
+                    </p>
+                    
+                    
+                    <script>
+                      function highlightSection(sectionId) {
+                        // Remove the 'highlight' class from all paragraphs
+                        var paragraphs = document.querySelectorAll('p');
+                        paragraphs.forEach(function(paragraph) {
+                          paragraph.classList.remove('highlight');
+                        });
+                    
+                        // Add the 'highlight' class to the clicked section
+                        var clickedSection = document.getElementById(sectionId);
+                        clickedSection.classList.add('highlight');
+                      }
+                    </script>
+</p>                    
+</p>
+            </div>
+
+            <div class="citat">
+                <p>⭐ <b>Favoritcitat:</b><br>
+                De flesta bra citat tycker jag gör sig bäst i sin kontext. Jag tycker till exempel väldigt mycket om serierna Arrested Development, och Archer, och tycker de har många roliga repliker, men tagna ur sitt sammanhang och utan bakgrund har de nog inget vidare underhållningsvärde, så det är svårt. Men uppskattar följande dialog från Archer s05e04:</p>
+                    <p>
+                    <div class="cyril">Cyril Figgis : So, as you can see, we are already down to 125 kilos of cocaine, which was worth about six million dollars.</div>
+                    <div class="archer">Sterling Archer : Wait, how much is that in pounds?</div>
+                    <div class="cyril">Cyril Figgis : Forget pounds, we're doing kilos!</div>
+                    <div class="archer">Sterling Archer : No, I meant pounds…</div>
+                    <div class="cyril">Malory Archer : Sterling!</div>
+                    <div class="archer">Sterling Archer : Exactly! As in, Doctor Who money.</div>
+                    </p>
+
+
+            </div>
+            
+            <h1>Information om Wordpress</h1>
+            <p>Wordpress är ett verktyg för att bygga och publicera webbsidor men här är ett bättre svar:
+                Webbpubliceringssystem
+                Webbpubliceringssystem är det som hostar sidan la?? tex
+                Webbserver
+                nej, detta e det
+                Domännamn
+                Namnet på domänen som vi läser, typ hermods.se
+                IP-adress
+                en rad siffror som identifierar från var en viss aktivitet sker, <a href="https://en.wikipedia.org/wiki/IPv6">intressant om IPv6</a>
+                Webbplats = hemsida
+                Wordpress.org och Wordpress.com
+                där man läser infon la, vs det som hostar om man har en wordpressbaserad grej ✅
+                Backend och frontend
+                det som snaxar m datorn vs d som snax m oss, nej. Backend är kod, logik, ingen stajling. Frontend är bara fint. Se den här memen:
+                
+                <img src="https://i.pinimg.com/736x/72/6f/2b/726f2bd40f47e05c59c1b75cfd51d1a0.jpg" height="50%", width="50%">
+                <p>Sry glömde line vhbreaks osv e lite full</p>
+
+
+            </p>
+        </div>
+
+        <div class="sidebar">
+
+            <h1>navigera i texten</h1>
+            <ol>
+                <li><a href="#section1" onclick="highlightSection('section1')">Vem jag är (en kort presentation)</a></li>
+                <li><a href="#section2" onclick="highlightSection('section2')">Mina intressen</a></li>
+                <li><a href="#section3" onclick="highlightSection('section3')">Målet med mina studier (i stort)</a></li>
+                <li><a href="#commonSection1" onclick="highlightSection('commonSection1')">Mål och ambitioner i <a href="https://hermods.se/utbildningar/webbutveckling-1/">denna kurs</a>.</li>
+              </ol>
+               <ul>
+                <li><a href="#section5" onclick="highlightSection('section5')">Betygsmål</a></li>
+              </ul>
+              <p>
+                <h2><h1>information om Wordpress</h1></h2>
+              </p>
+              <h3><h1>köpa en tofupress </h3></h1>
+        </div>
+        
+
+    </div>
+
+    </body>
+</html>
