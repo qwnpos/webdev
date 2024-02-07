@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <!--länkar till css-dokumentet-->
       <link rel="stylesheet" type="text/css" href="stilmall4prez.css" />
-        <meta charset_="utf-8">
-        <title> hemsidan om mig </title>
+      <!--anger teckenuppsättning-->
+      <meta charset_="utf-8">
+        <!--hemsidans titel-->
+      <title> hemsidan om mig </title>
     </head> 
     <body> 
+      <!--hemsidans innehåll som inte är själva dess titel-->
         <h1> här är rubriken</h1>
         <p> detta är brödtextens första stycke</p>
+        <!--länk till min utförliga och välanvända github som jag har superkoll på-->
         <a href="https://github.com/qwnpos" target= "_blank">min github</a>
-       <!-- <a href="http://github.com/qwnpos" title= "_blank">mina github</a> re: vad title gör?? va?-->
+        <!-- Textstycke som beskriver bild som efterföljer texten-->
        <p> Nedan är är en bild på min Fjodor i sina nya skor. I bakgrunden syns även <a href="https://sv.wikipedia.org/wiki/%C3%84nder" target= "_blank">änder.</a> </p>
        <img src="IMG_20240120_155105.jpg" width="104" height="142">
-       
-       <div class="my-box">
-       <p>5 <i>spännande</i> fakta om Fjodor:</p>
+      
+       <!--tänkt att med hjälp av css bli en box som omsluter en lista med fakta, en faktaruta rentav-->
+       <div class="faktaruta">
+       <p>5 <em>spännande</em> fakta om Fjodor:</p>
        <ul>
         <li> 1 Han är en <a href="https://www.skk.se/sv/hundraser/?group=8" target= "_blank">apporterande jakthund</a></li>
         <li> 2 Hans namn är <a href="https://sv.wikipedia.org/wiki/Ryska" target= "_blank">ryskt</a>, men är stavat på <a href="https://sv.wikipedia.org/wiki/Svensk_ortografi#%C3%96verensst%C3%A4mmelse_mellan_skrift_och_tal" target= "_blank">svenska</a>. </li>
@@ -22,41 +28,46 @@
         <li> 4 Han har fyra <a href="https://en.wikipedia.org/wiki/TASS" target="_blank"> tassar</a>.</li>
         <li> 5 Han är fantastisk på att <a href="https://www.postnord.se/vara-verktyg/spara-brev-paket-och-pall" target= "_blank">spåra</a>. </li>
        </ul>
-      </div> 
+      </div>
+
+<!--Här ska en till box visa en plot twist, vilken är att ett av tidigare nämnda fakta inte stämmer. För att komma vidare till mainhemsidan måste man välja vilket det är.-->
       <div class="plottwist"> <p> Tro inte på allt du läser på internet. Bland dessa "fakta" finns ett fel. Vilket tror du är fabricerat? Välj rätt så får du kanske gå vidare! (Tips: använd länkarna och information från bilden.)</p>
-         
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>finn fjodors fiktiva faktum</title>
-  
+  <!-- Här är ett "formulär" för att besvara frågan om vilken siffra ovan motsvarande ett faktum man gissar är felaktigt. -->
     <form id="quizForm">
-      <label>
-        Förmodat fabricerat faktum:
+        <p>Förmodat fabricerat faktum:
         <select name="Fjodorsfinurligaform">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-        </select>
-      </label>
+        </select> 
+     
+      
+
+      <!--Här är en knapp för att "bekräfta" valet och en funktion som kollar om man svarat rätt-->
       <input type="button" value="Gå vidare" onclick="checkAnswers()">
+    </p>
     </form>
   </div>
   
   <script>
-      // kontrollera svar
+      // i javascript kommenterar man såhär tydligen
+      // funktion som kontrollerar om svaret man valt är rätt
       function checkAnswers()
       {
-
+        //123456789
+        // sätter värdet på variabeln "answer" till markerad rad i quizForm 
+        // gör "answer" den markerade raden i formuläret "answer"
         var answer = document.forms["quizForm"]["Fjodorsfinurligaform"].value;
 
-        // konrollera om valt svar är rätt
+        // kontrollerar om valt svar är rätt (dvs ett)
         if (answer === "1") {
-          // omdirigerar till presenationssida
+          // omdirigerar till presenationssida om ja
           window.location.href = "presentation.html";
         }
         else {
-          //vid fel svar visas felmeddelande
+          //vid fel svar visas istället ett felmeddelande
           alert("Fel fel funnet. Fortsätt försöka!");
        
         }
